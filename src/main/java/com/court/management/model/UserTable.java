@@ -11,8 +11,8 @@ import java.sql.Timestamp;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "SIGN_UP_WORK")
-public class SignUp {
+@Table(name = "USER_TABLE")
+public class UserTable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -37,7 +37,7 @@ public class SignUp {
     @Column(name = "EMAIL_ID")
     private String email;
 
-    @Column(name = "role")
+    @Column(name = "ROLE")
     private String role;
 
     @Column(name = "GOVERNMENT_ID_PROFF" , length = 200000)
@@ -51,19 +51,11 @@ public class SignUp {
     @Column(name = "DOB")
     private Timestamp dob;
 
-    @Column(name = "Status")
-    private String status;
-
-    @Column(name = "ACTION_TIME")
-    private Timestamp actionTime;
-
-    @Column(name = "ACTION_TAKEN_BY")
-    private String actionBy;
-
     @Column(name = "USERID")
     private String userId;
 
     @Column(name="PASSWORD")
     private String password;
+
 
 }

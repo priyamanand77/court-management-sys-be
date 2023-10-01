@@ -10,9 +10,5 @@ public interface SignUpService {
 
     SuccessResponse addUsers(SignUpDto signUpDto);
 
-    SuccessResponse acceptOrRequestUser(AcceptOrRegect acceptOrRegect);
-
-    List<SignUpDto> getAllUserByStatus(String status);
-
     List<SignUpDto> getAllSignUpReq();
 }

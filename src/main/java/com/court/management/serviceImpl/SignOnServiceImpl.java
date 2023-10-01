@@ -5,7 +5,6 @@ import com.court.management.dto.SignUpDto;
 import com.court.management.exception.CourtException;
 import com.court.management.model.SignUp;
 import com.court.management.repo.SignUpRepoWork;
-import com.court.management.request.AcceptOrRegect;
 import com.court.management.response.SuccessResponse;
 import com.court.management.service.SignUpService;
 import com.court.management.utils.CourtUtils;
@@ -51,15 +50,6 @@ public class SignOnServiceImpl implements SignUpService {
 
     }
 
-    @Override
-    public SuccessResponse acceptOrRequestUser(AcceptOrRegect acceptOrRegect) {
-        return null;
-    }
-
-    @Override
-    public List<SignUpDto> getAllUserByStatus(String status) {
-        return null;
-    }
 
     @Override
     public List<SignUpDto> getAllSignUpReq() {
